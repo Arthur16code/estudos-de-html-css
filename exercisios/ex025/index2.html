@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulario</title>
+    <style>
+        .inprof{
+            width: 150px;
+        }
+        select{
+            width: 180px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form>
+        <fieldset>
+            <legend>Formulario</legend>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                    <option value="MG">Minas Gerais</option>
+                    <optgroup label="RJ, SP">
+                        <option value="RJ">Rio Janeiro</option>
+                        <option value="SP">Sao paulo</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profisão:</label>
+                <input type="text" name="prof" id="iprof" list="istprof" class="inprof">
+                <datalist id="istprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="PROF">Professor</option>
+                    <option value="CONT">Conbilista</option>
+                    <option value="DEV">prgamador</option>
+                </datalist>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
