@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexibe Box</title>
+    <title>Flexibe Box centralizado</title>
     <style>
-
-        div.container{
-            background-color: lightsalmon;
-            display: flex;
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        div.item{
-            background-color: skyblue;
-            border: 1px solid;
-            margin: 10px;
-            flex: auto;
-            text-align: center;
+        body{
+            background-color: lightsalmon;
+        }
+
+        main {
+            background-color: lightgreen;
+            height: 300px;
+            width: 100vw ;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section{
+            background-color: lightseagreen;
+            height: 200px;
+            width: 200px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-    </div>
+    <main>
+        <section>
+            <h1>Tela de  Login</h1>
+        </section>
+    </main>
 </body>
 </html>
